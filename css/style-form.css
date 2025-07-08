@@ -1,0 +1,52 @@
+
+.log .pass{
+    justify-content: space-between;
+       color:darkslategrey;
+       gap: 10%;
+       font-size: 14px;
+      
+}
+
+#formu .form {
+    justify-content: space-between;
+    width: 50%;
+    padding: 1%;
+    background-color: #fff;
+
+}
+
+form{
+   
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 5%;
+}
+
+
+#dados{
+    font-size: xx-small;
+    padding: 5%;
+    padding-top: 0%;
+    color: rgba(8, 8, 8, 0.781);
+  }
+
+
+#button{
+    font-family: monospace;
+    width: 25%;
+    margin-top: 5px;
+    background-color: aqua;
+    color: #000;
+}
+
+
+i {
+    font-size: 40px;
+    width: 100epx;
+    height: 60%;
+   margin-left: 40%;
+   cursor: pointer;
+}
+
+
+
