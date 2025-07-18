@@ -1,14 +1,38 @@
 
-body{
+* { box-sizing: border-box; margin: 0; padding: 0; }
 
-    background:forestgreen
+body {
+  background: forestgreen;          
+  display: flex;                   
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;                /* ocupa a tela inteira */
 }
 
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* pode manter se quiser centralizado */
+  align-items: stretch;
+  max-width: 1200px;
+  margin: 5% auto;
+  padding: 0;
+  gap: 0; /* REMOVE o espaço entre blocos */
+}
 
- .containner{
-    margin-top: 10%;
-    display: flex;
+/* Responsivo */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem;
+    flex-wrap: wrap;
+  }
 
-     }
+  #content,
+  #formu {
+    max-width: 100%;
+  }
+}
 
 

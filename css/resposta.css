@@ -10,7 +10,15 @@ body{
     
 }
 
-p a{
+h3 a{
+    color: rgb(11, 87, 228);
+    text-decoration: none;
+}
+
+p {
+    text-align: center;
+}
+a {
     color: rgb(11, 87, 228);
     text-decoration: none;
 }

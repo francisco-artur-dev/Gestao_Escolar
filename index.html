@@ -8,52 +8,59 @@
     <link rel="stylesheet" href="css/style-body.css">
     <link rel="stylesheet" href="css/style-form.css">
     <link rel="stylesheet" href="css/style-conteudo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="FontAwesome/fontawesome-free-6.5.2-web/fontawesome-free-6.5.2-web/css/all.css">
-    
+
 </head>
 <body>
 
-<div class="containner">
-    <section id="content">
-        <div class="conteudo">
+    <div class="container">
+        <section id="content">
+            <div class="conteudo">
 
-            <h1> Gestão Escolar </h1>
-            <h3> Administração de notas e frequência escolar, manutenção de alunos,<br>
-                 professores, aulas, disciplinas, e  marcação de provas com diferentes pesos. 
-          </h3>
+                <h1> Gestão Escolar </h1>
+                <h3> Administração de notas e frequência escolar, manutenção de alunos,<br>
+                    professores, aulas, disciplinas, e  marcação de provas com diferentes pesos. 
+                </h3>
 
-             <u class="linha"> <P> Baixe o scriptcase e Baixe o aplicativo grátis» </P> </u>
+                <a href="https://www.scriptcase.net/download/"> <P> Baixe o scriptcase e Baixe o aplicativo grátis» </P> </a>
+            </div>
+            
+        </section>
 
-        </div>
+        <section id="formu">
+            <div class="form">
+                    <form name="formulario"  method="get" onsubmit="return login()">
+                            <div class="icon"> <i class="fa-regular fa-user"></i> </div>  
+                                    
+                        <label class="user"> ENTRAR
+                                <input type="text" name="usuário" id="user" placeholder="Nome de usuário">
+                        </label>
 
-    </section>
+                        <label class="pass"> SENHA
+                                <input type="password" name="senha" id="pass" placeholder="Senha">
+                        </label>
 
-    <section id="formu">
-        <div class="form">
-            <form name="formulario" action="/indexes/resposta.html" method="get" >
-                <div class="user"> <i class="fa-regular fa-user"></i> </div>  
-                        
-               <Label class="log"> ENTRAR
-                    <input type="text" name="ENTRAR" id="log" placeholder="Login">
-               </Label>
+                            <div class="US">
+                                <img src="https://flagcdn.com/us.svg" width="24" alt="USA">
+                            </div>
+                            <div class="PT">
+                                <img src="https://flagcdn.com/pt.svg" width="24" alt="Portugal">
+                            </div>
+                            <input type="submit" value="Login" id="button" >
+                   </form>  
+                <section class="lista-dados">
+                        <small class="dados">login / senha </small>
+                        <small class="dados">adminstrador: admin/1234 </small>
+                        <small class="dados">professor: teacher/1234 </small>
+                        <small class="dados">estudante: student/1234 </small>
+                        <small class="dados">responsavel: parent/1234 </small>
+              </section>
+            </div>
+       </section>
+    </div>
 
-                <Label class="pass"> SENHA
-                    <input type="password" name="SENHA" id="pass" placeholder="Senha">
-                </Label>
-
-                <div class="US"> </eu> </div>
-                <div class="PT"> </div>  
-                <input type="submit" value="Login" id="button">
-           </form>  
-            <p id="dados">login / senha </p>
-            <p id="dados">adminstrador: admin/1234 </p>
-            <p id="dados">professor: teacher/1234 </p>
-            <p id="dados">estudante: student/1234 </p>
-            <p id="dados">responsavel: parente/1234 </p>
-       </div>
-   </section>
-
-</div>
+<script src="script/app.js"></script>
 
 </body>
 </html>
